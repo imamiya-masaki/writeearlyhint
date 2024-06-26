@@ -1,4 +1,10 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// nuxt.config.ts
 export default defineNuxtConfig({
-  devtools: { enabled: true }
+  ssr: true,
+  experimental: {
+    writeEarlyHints: true
+  },
+  devtools: {
+    enabled: true
+  }
 })
